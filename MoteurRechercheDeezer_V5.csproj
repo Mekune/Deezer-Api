@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3841DE6E-DB58-434E-8413-13B09D2394D3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ApplicationWindowsForm</RootNamespace>
+    <AssemblyName>ApplicationWindowsForm</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Btssio">
+      <HintPath>U:\informatique_cybersecurite\Dev_ALBERT\Bibliothèques\Btssio.dll</HintPath>
+    </Reference>
+    <Reference Include="CDI.IndexCard3D">
+      <HintPath>C:\Program Files (x86)\ComponentDesigns\IndexCards3D\Component\CDI.IndexCard3D.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmCoverFlow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCoverFlow.Designer.cs">
+      <DependentUpon>FrmCoverFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPlaylist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPlaylist.Designer.cs">
+      <DependentUpon>FrmPlaylist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRechercheAlbums.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRechercheAlbums.Designer.cs">
+      <DependentUpon>FrmRechercheAlbums.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmaPropos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmaPropos.Designer.cs">
+      <DependentUpon>FrmaPropos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDemarrage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDemarrage.Designer.cs">
+      <DependentUpon>FrmDemarrage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLecteurMultimedia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLecteurMultimedia.Designer.cs">
+      <DependentUpon>FrmLecteurMultimedia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmCoverFlow.resx">
+      <DependentUpon>FrmCoverFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPlaylist.resx">
+      <DependentUpon>FrmPlaylist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRechercheAlbums.resx">
+      <DependentUpon>FrmRechercheAlbums.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmaPropos.resx">
+      <DependentUpon>FrmaPropos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDemarrage.resx">
+      <DependentUpon>FrmDemarrage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLecteurMultimedia.resx">
+      <DependentUpon>FrmLecteurMultimedia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Off.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ipod.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MasqueZ.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\On.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
